@@ -10,7 +10,7 @@ import re
 texto = "lista de peso [50, 40, 50] lista de altura [175, 160, 153]"
 
 # Expresión regular para listas de números
-patron = r"\[\d+\]"
+patron = r"\[\d+(?:,\s\d+)*\]"
 
 # Buscar todas las listas
 listas = re.findall(patron, texto)
